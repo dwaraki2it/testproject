@@ -1,0 +1,15 @@
+#commenttab ul{list-style-type:none;text-align:right;width:230px;display:inline;padding:0px;margin:0px;float:right;}
+#commenttab div{}
+#commenttab li{float:right;text-align:right;list-style-image:url(/assets/imglist.html);}
+#commenttab li p{font-size:12px;font-weight:normal;margin:0px}
+.content2.inactive{display:none;}
+.content2{margin-top:5px;background-color:#FFF;}
+#tocall2{border-bottom:none;list-style:none;height:30px;text-align: center;}
+#tocall2 a{color:#FFF;display:block;margin:0px;text-align:center;width:113px;height:24px;padding-right:0px;padding-left:0px;font-size:16px;}
+#tocall2 a.firsttab{background:url(/assets/word/5.png) no-repeat;display:block;}
+#tocall2 a.secondtab{background:url(/assets/word/4.png) no-repeat;display:block;}
+#tocall2 a.firsttab.active{background:url(/assets/word/5.png) no-repeat;display:block;}
+#tocall2 a.secondtab.active{background:url(/assets/word/4.png) no-repeat;display:block;}
+#tocall2 li{width:113px;padding:0px;margin:0px;float:right;border-bottom:none;border-top:none;border:1px solid #c6c6c6;padding: 3px 0px 0px 18px;
+margin-right: 4px;}
+#tocall2 li a.active{background:url(/assets/tabbgcelected.html);border-bottom:none;border-top:none;color:#FFFFFF;width:113px;}

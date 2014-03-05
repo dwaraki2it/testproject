@@ -1,0 +1,11 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  simple_captcha:
+    placeholder: "إدخال رمز"
+    message:
+      default: "لم كود سري لا تتطابق"
+  email_error: "لا تبدو وكأنها عنوان البريد الإلكتروني"
+  name_error: "لا يمكن أن يكون فارغا"
+  mail_subject: "البريد الاختبار"

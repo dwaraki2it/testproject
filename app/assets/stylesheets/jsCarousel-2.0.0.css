@@ -1,0 +1,137 @@
+/*Horizontal Orientation CSS*/
+
+#hWrapperAutoinside {width:885px;}
+
+
+#carouselhAuto {}
+
+#carouselhAuto img:hover {opacity:.8;}
+#carouselhAuto a {color: #fff}
+#carouselhAuto  a:hover {color:#358dd4}
+
+.jscarousal-horizontal
+{
+
+	height: 170px;
+	margin: 0;
+	padding: 0;
+	padding-top:5px;
+	padding-bottom:25px;
+	padding-left:9px;
+	position: relative; /*overflow: hidden;*/
+}
+.jscarousal-horizontal-back, .jscarousal-horizontal-forward
+{
+	float: left;
+	width: 39px;
+	height: 36px;
+	color: White;
+	position: absolute;	 left: 13px;
+	cursor: pointer;
+}
+.jscarousal-horizontal .img_rt{padding-right: 15px;}
+#slider-1 .jscarousal-horizontal .img_rt{width:114px;}
+.jscarousal-horizontal-back
+{
+	background-image:url(/assets/left_arrow.gif);
+	background-repeat: no-repeat;
+
+}
+.jcarousel-play
+{
+	background-image: url(/assets/slide_start.gif);
+	background-repeat: no-repeat;
+	left: 50%;
+        position: absolute;
+         width: 20px;
+height: 20px;
+cursor:pointer;
+}
+.jcarousel-pause
+{
+	background-image: url(/assets/slide_pause.gif);
+	background-repeat: no-repeat;
+	left: 54%;
+        position: absolute;
+        width: 20px;
+height: 20px;
+cursor:pointer;
+}
+.jscarousal-horizontal-forward
+{
+	background-image: url(/assets/right_arrow.gif);
+	background-repeat: no-repeat;
+	left: 48px;
+}
+.jscarousal-contents-horizontal
+{       top: 44px;
+	width: 1012px;
+	height: 120px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+#slider-1 .jscarousal-contents-horizontal{ height:140px;}
+#slider-10 .jscarousal-contents-horizontal{ height:140px;}
+.jscarousal-contents-horizontal > div
+{
+	position: absolute;
+	width: 100%;
+	height: 124px;
+}
+.jscarousal-contents-horizontal > div > div
+{
+	float: left;
+	margin-left: 10px;
+
+}
+#slider-2 .jscarousal-contents-horizontal{ height:140px;}
+.jscarousal-contents-horizontal > div
+{
+	position: absolute;
+	width: 100%;
+	height: 124px;
+}
+.jscarousal-contents-horizontal > div > div
+{
+	float: left;
+	margin-left: 10px;
+
+}
+.jscarousal-contents-horizontal img
+{
+	width: 130px;
+	height:75px;
+	 border:3px solid #ccc;
+}
+#slider-1 .jscarousal-contents-horizontal img
+{
+	width: 130px!important;
+	height:75px!important;
+
+}
+/*Horizontal Orientation CSS Ends*/
+
+
+/*Common*/
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
+
+.thumbnail-text
+{   width:50px;
+	color: #7A7677;
+	font-weight: bold;
+	font-size:13px!important;
+	height:50px;
+	line-height:15px;
+	overflow:hidden;
+	text-align: center;
+
+	padding: 2px 2px 0px 0px;
+}

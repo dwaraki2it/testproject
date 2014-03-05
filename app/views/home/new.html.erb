@@ -1,0 +1,279 @@
+<!-------right aria ----------->
+<div class="content-right">
+
+  <!-------add comment  aria ----------->
+  <div id="catbox">
+    <div id="catheader">
+      <div style="text-align:right; padding-right: 10px">
+        <div style="padding-top:10px;">
+          <span id="bread-crumb">
+            <a title="الرئيسية" href="http://dev.sameerbook.net/">الرئيسية</a>/
+            <strong title="#">أشترك بالقائمة البريدية</strong></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background-color:#EAEAEA;" class="contactus contentrightborder" id="catbody">
+      <br><br>
+      <p style="text-align: center; font-family: sameerbook; font-size: 14px; padding:0px 20px 0px 0px;">
+        اشترك معنا في نشرة الموقع الأسبوعية لتصلك عبر بريدك الاكتروني
+      </p>
+      <%= form_for @mail,:url => home_index_path(@mail) do |f| %>
+        <% if @mail.errors.any? %>
+          <ul>
+            <% @mail.errors.each do |attr,msg|  %>
+              <li style="color:red;"><% attr %>&nbsp;<%= msg %></li>
+            <% end %>
+          </ul>
+        <% end %>
+        <table width="720px" cellspacing="0" cellpadding="0" style="padding: 30px 0px; " class="td-add maillist" dir="rtl">
+          <tbody>
+            <tr>
+              <td style="direction: rtl; width: 100px"><label>الاسم  </label></td>
+              <td><%= f.text_field :name,:style => "width: 350px;padding: 4px;font-family:sameerbook; font-size:14px; font-weight:bold;",:placeholder=>"الاسم " %></td>
+            </tr>
+
+            <tr>
+              <td><label>البريد الالكتروني </label></td>
+              <td><%= f.email_field :email,:style => "width: 350px;padding: 4px;font-family:sameerbook; font-size:14px; font-weight:bold;",:placeholder=>"البريد الاكتروني" %></td>
+            </tr>
+            <tr>
+              <td><label> كود التحقق</label></td>
+              <td align="right">
+                <%= f.simple_captcha :label => "Enter numbers.." %>
+                <input type="submit" class="submit-mailist" value="">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <% end %>
+    </div>
+    <!--<img src="images/inner_bottom.gif" width="728" height="10">-->
+  </div>
+</div>
+
+<div class="content-left">
+  <!-- bigbox -->
+
+  <div class="left_section">
+    <div class="leftset">
+      <h3><img src="http://dev.sameerbook.net/images/word/Facebook_insidenews_icon.png"></h3>
+      <div class="fbcontent">
+        <iframe scrolling="no" frameborder="0" style="height: 270px;width:279px" allowtransparency="true" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FMeen.Samer&amp;width=285&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;height=270"></iframe>
+
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="leftset">
+      <h3><!--آخر الأخبار--><img src="http://dev.sameerbook.net/images/word/1.png"></h3>
+      <ul>
+        <li>
+          <div style="width:100px;" class="img_rt">
+            <a title="test from add news" href="http://dev.sameerbook.net/test_from_add_news/اخبار_العالم/اخبار_الاردن.html"><img alt="test from add news" style="width: 98px; height: 60px" src="http://dev.sameerbook.net/img/"></a>
+          </div>
+          <div class="img_cnt">
+            <p><span style="color:#CC0000;font-size:12px;font-family:sameerbook!important;">عدد المشاهدات :117</span><br><a href="http://dev.sameerbook.net/test_from_add_news/اخبار_العالم/اخبار_الاردن.html" style="color:black;font-size:13px;font-family:sameerbook!important;"><b>test from add news</b></a></p>
+          </div>
+        </li>
+        <li>
+          <div style="width:100px;" class="img_rt">
+            <a title="تجربة ايمن البيتاوي " href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%A7%D9%8A%D9%85%D9%86_%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%D8%A7%D9%88%D9%8A/اخبار_العالم/اخبار_الاردن.html"><img alt="تجربة ايمن البيتاوي " style="width: 98px; height: 60px" src="http://dev.sameerbook.net/img/orientalsecurity_sameer5fb51aa4f617f6686864a8269d05d379. هام.jpg"></a>
+          </div>
+          <div class="img_cnt">
+            <p><span style="color:#CC0000;font-size:12px;font-family:sameerbook!important;">عدد المشاهدات :203</span><br><a href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%A7%D9%8A%D9%85%D9%86_%D8%A7%D9%84%D8%A8%D9%8A%D8%AA%D8%A7%D9%88%D9%8A/اخبار_العالم/اخبار_الاردن.html" style="color:black;font-size:13px;font-family:sameerbook!important;"><b>تجربة ايمن البيتاوي </b></a></p>
+          </div>
+        </li>
+        <li>
+          <div style="width:100px;" class="img_rt">
+            <a title="تجربة رقم 0" href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%B1%D9%82%D9%85_0/اخبار_العالم/اخبار_الاردن.html"><img alt="تجربة رقم 0" style="width: 98px; height: 60px" src="http://dev.sameerbook.net/img/orientalsecurity_sameer3efb3d4aebe8dfd56604da15d41e9b21.jpg"></a>
+          </div>
+          <div class="img_cnt">
+            <p><span style="color:#CC0000;font-size:12px;font-family:sameerbook!important;">عدد المشاهدات :185</span><br><a href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%B1%D9%82%D9%85_0/اخبار_العالم/اخبار_الاردن.html" style="color:black;font-size:13px;font-family:sameerbook!important;"><b>تجربة رقم 0</b></a></p>
+          </div>
+        </li>
+        <li>
+          <div style="width:100px;" class="img_rt">
+            <a title="تجربة رقم 1" href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%B1%D9%82%D9%85_1/اخبار_العالم/اخبار_الاردن.html"><img alt="تجربة رقم 1" style="width: 98px; height: 60px" src="http://dev.sameerbook.net/img/orientalsecurity_sameer92907e9e24565a66cfbab091f1d9513d._347758255295719_2119706226_n.jpg"></a>
+          </div>
+          <div class="img_cnt">
+            <p><span style="color:#CC0000;font-size:12px;font-family:sameerbook!important;">عدد المشاهدات :56</span><br><a href="http://dev.sameerbook.net/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9_%D8%B1%D9%82%D9%85_1/اخبار_العالم/اخبار_الاردن.html" style="color:black;font-size:13px;font-family:sameerbook!important;"><b>تجربة رقم 1</b></a></p>
+          </div>
+        </li>
+        <li>
+          <div style="width:100px;" class="img_rt">
+            <a title="خبر رياضي رقم 2" href="http://dev.sameerbook.net/%D8%AE%D8%A8%D8%B1_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A_%D8%B1%D9%82%D9%85_2/اخبار_العالم/اخبار_الاردن.html"><img alt="خبر رياضي رقم 2" style="width: 98px; height: 60px" src="http://dev.sameerbook.net/img/orientalsecurity_sameeraca4e7779b1fdaaa50568230cbd9c0ed.jpg"></a>
+          </div>
+          <div class="img_cnt">
+            <p><span style="color:#CC0000;font-size:12px;font-family:sameerbook!important;">عدد المشاهدات :162</span><br><a href="http://dev.sameerbook.net/%D8%AE%D8%A8%D8%B1_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A_%D8%B1%D9%82%D9%85_2/اخبار_العالم/اخبار_الاردن.html" style="color:black;font-size:13px;font-family:sameerbook!important;"><b>خبر رياضي رقم 2</b></a></p>
+          </div>
+        </li>
+        <li>
+          <div class="seemore"><a href="http://dev.sameerbook.net/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D9%8A%D8%A9/اخبار_الاردن"><img src="http://dev.sameerbook.net/images/plusnewicon.gif"></a></div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+
+
+    <!-- ########################### -->
+
+    <!-- ########################### -->
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var option = 'boxnews1month';
+        showDiv(option);
+      });
+
+      function showDiv(option) {
+        $('.boxnews1').hide();
+        $('#' + option).show();
+      }
+      ;
+    </script>
+    <div class="leftset">
+      <h3><img src="http://dev.sameerbook.net/images/word/3.png"></h3>
+
+      <!-- ##########
+      <div id="header-blue"><img src="" /></div>
+      -->
+      <table width="100%" border="0" align="center" class="left-table">
+        <tbody><tr>
+            <td scope="row"><a href="javascript:showDiv('boxnews1day')"><strong>لهذا اليوم</strong></a><!--<a href="?contact=D">لهذا اليوم</a>To Day--></td>
+            <td scope="row"><a href="javascript:showDiv('boxnews1week')"><strong>لهذا الاسبوع</strong></a><!--<a href="?contact=W">لهذا الاسبوع </a>This Week--></td>
+            <td scope="row"><a href="javascript:showDiv('boxnews1month')"><strong>لهذا الشهر</strong></a><!--<a href="?contact=M"> لهذا الشهر</a>This Month--></td>
+          </tr>
+        </tbody></table>
+
+      <!-- begin div id="boxnews1"  id="month" -->
+      <div id="boxnews1month" class="boxnews1" style="display: block;">
+        <!-- start tab -->
+        <ul id="tocall2">
+          <li><a class="secondtab active" href="#tab1"></a></li>
+          <li><a class="firsttab inactive" href="#tab2"></a></li>
+        </ul>
+
+        <div id="tab1" class="content2 active">
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul>
+                    <!--<span>  Month </span><br />
+                    -->
+
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+
+        <div id="tab2" class="content2 inactive">
+
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul id="commenttab">
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+      </div>
+
+      <!-- end div id="boxnews1"  id="month" -->
+
+      <!-- begin div id="boxnews1"  id="week" -->
+      <div id="boxnews1week" class="boxnews1" style="display: none;">
+        <!-- start tab -->
+        <ul id="tocall2">
+          <li><a class="secondtab active" href="#tab3"></a></li>
+          <li><a class="firsttab inactive" href="#tab4"></a></li>
+        </ul>
+        <div id="tab3" class="content2 active">
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul id="commenttab">
+                    <!--<span>  week </span><br />
+                    -->
+
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+
+        <div id="tab4" class="content2 inactive">
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul id="commenttab">
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+
+      </div>
+      <!-- end div id="boxnews1"  id="week" -->
+
+      <!-- begin div id="boxnews1"  id="day" -->
+      <div id="boxnews1day" class="boxnews1" style="display: none;">
+        <!-- start tab -->
+        <ul id="tocall2">
+          <li><a class="secondtab active" href="#tab5"></a></li>
+          <li><a class="firsttab inactive" href="#tab6"></a></li>
+        </ul>
+
+        <div id="tab5" class="content2 active">
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul id="commenttab">
+                    <!-- <span>  Day </span><br />
+                    -->
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+
+        <div id="tab6" class="content2 inactive">
+          <table cellspacing="0" cellpadding="0" dir="rtl" id="tabletab1">
+            <tbody><tr>
+                <td valign="top">
+                  <ul id="commenttab">
+                  </ul>
+                </td>
+              </tr>
+            </tbody></table>
+        </div>
+
+      </div>
+      <!-- end div id="boxnews1"  id="day" -->
+    </div>
+
+    <script type="text/javascript" src="http://dev.sameerbook.net/js/activatables.js"></script>
+    <script type="text/javascript">
+      activatables('page', ['tab1', 'tab2']);
+      activatables('page', ['tab3', 'tab4']);
+      activatables('page', ['tab5', 'tab6']);
+    </script>
+
+
+
+    <!-- end tab -->
+
+
+    <div class="clear"></div>
+  </div>
+
+  <!--end bigbox-->
+
+
+  <div class="clear"></div>
+</div>

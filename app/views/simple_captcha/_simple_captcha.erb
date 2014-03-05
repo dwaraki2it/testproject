@@ -1,0 +1,17 @@
+<style type="text/CSS">
+  .simple_captcha_image img{
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 110px !important;
+  }
+  .simple_captcha_image input{
+    width: 150px;padding: 3px;font-family:sameerbook; font-size:14px; font-weight:bold; float:right;
+  }
+</style>
+
+<div>
+  <div class='simple_captcha_image'>
+    <%= simple_captcha_options[:image] %>
+    <%= simple_captcha_options[:field] %>
+  </div>
+</div>
