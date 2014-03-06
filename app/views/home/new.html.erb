@@ -23,7 +23,7 @@
         <% if @mail.errors.any? %>
           <ul>
             <% @mail.errors.each do |attr,msg|  %>
-              <li style="color:red;"><% attr %>&nbsp;<%= msg %></li>
+              <li style="color:green;"><% attr %>&nbsp;<%= msg %></li>
             <% end %>
           </ul>
         <% end %>
